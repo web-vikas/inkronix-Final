@@ -1,0 +1,327 @@
+:root {
+  --white: #ffffff;
+  --border: #63d1ee;
+  --black: #02151e;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1;
+}
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn:active:focus:not(:disabled):not(.disabled),
+.btn:focus,
+.btn:active,
+.btn:hover {
+  border: 1px solid var(--border);
+  color: var(--white);
+  background-color: var(--border);
+}
+body {
+  background-color: var(--white);
+  box-sizing: inherit;
+}
+header {
+  padding: 1rem 0;
+  background: url("../images/exiting-the-void.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+.logo img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+.logo h1 {
+  color: var(--white);
+  text-transform: uppercase;
+}
+nav {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+.nav_links {
+  list-style: none;
+  gap: 3rem;
+}
+.nav_links a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 20px;
+}
+.active {
+  display: flex !important;
+  flex-direction: column;
+  position: absolute;
+  background-color: #02151e;
+  width: calc(100% - 40px);
+  margin: 20px;
+  left: 0;
+  padding: 1.5rem;
+  top: 70px;
+  border-radius: 12px;
+}
+.talk {
+  background: #070b1d;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: -100%;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-3 {
+  flex: 3;
+  background-color: white;
+}
+
+.form_title h2 {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  transform: rotate(-90deg);
+}
+.form_content {
+  padding: 15px;
+  flex: 6;
+  width: 100%;
+  position: relative;
+}
+.close_icon_btn span {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  text-align: center;
+}
+.close_icon_btn .fa-xmark {
+  margin-left: 12px;
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  background: #e7ebf1;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(90% - 20px);
+  padding: 20px 50px;
+  border-radius: 1rem;
+}
+.show {
+  top: 0;
+}
+form input,
+textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  resize: none;
+}
+.submit_btn {
+  color: white;
+  background: #070b1d;
+  border-radius: 33.2697px;
+  border: none;
+  outline: none;
+  padding: 1rem;
+}
+header .section {
+  height: 90vh;
+}
+.btn-cta {
+  border: 1px solid var(--border);
+  color: var(--white);
+}
+.section h1 {
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+.imp-text {
+  color: var(--border);
+}
+.landing-btn {
+  color: var(--white);
+  background-color: var(--border);
+  border-radius: 50%;
+  font-size: 3rem;
+  height: 72px;
+  width: 72px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  padding: 10px;
+  transform: rotate(-45deg);
+}
+.intro {
+  background-color: var(--white);
+}
+.bg {
+  position: relative;
+}
+.intro h2 {
+  color: #1e839a;
+}
+.intro p {
+  color: #02151e;
+}
+.yt-emmbed iframe {
+  aspect-ratio: 16/9;
+  position: relative;
+  z-index: 3;
+}
+.bg::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 40%;
+  width: 100%;
+  background-color: #0e4e5d;
+}
+.section-ongoing {
+  padding-top: 5rem;
+  min-height: 110vh;
+  background-color: #0e4e5d;
+  position: relative;
+}
+.section-ongoing .container {
+  z-index: 20;
+  position: relative;
+}
+.eclipse {
+  position: absolute;
+  border-radius: 50%;
+  background: #0e4e5d;
+  border: 0.596135px solid #63d1ee;
+  box-shadow: inset 0px 2.38454px 40.5372px #63d1ee;
+}
+.eclipse-1 {
+  width: 57px;
+  height: 57px;
+  left: 100px;
+  top: 200px;
+  box-shadow: inset 0px 1.37047px 23.298px #63d1ee;
+}
+.eclipse-2 {
+  width: 98px;
+  height: 98px;
+  left: 95px;
+  top: 300px;
+  box-shadow: inset 0px 2.35625px 40.0562px #63d1ee;
+}
+.eclipse-3 {
+  position: absolute;
+  width: 99.18px;
+  height: 99.18px;
+  right: 50.61px;
+  top: 0.42px;
+}
+.eclipse-4 {
+  position: absolute;
+  left: initial;
+  right: 10%;
+  top: 15%;
+  border-radius: 50%;
+}
+.vector {
+  position: absolute;
+  width: 333px;
+  height: 367px;
+  left: -20px;
+  top: 450px;
+}
+.section-offer {
+  background-color: #0e4e5d;
+  padding-top: 5rem;
+}
+.btn-hire {
+  background-color: var(--border);
+  color: var(--white);
+  font-size: 2.5rem;
+}
+.btn-hire i {
+  transform: rotate(-30deg);
+}
+.section-title {
+  text-transform: uppercase;
+  border-left: 10px solid var(--border);
+  padding: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: var(--white);
+}
+.project-card {
+  box-shadow: 0px 0px 36px -3.6000001430511475px #63d1ee inset;
+  color: white;
+  width: 100%;
+  max-width: 490px;
+  height: 300px;
+  gap: 2rem;
+  border-radius: 24px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.offer-content {
+  background: url("../images/woman-wearing-virtual-reality-simulator-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom right;
+  min-height: 60vh;
+}
+.section-webinar {
+  background: linear-gradient(87.12deg, #1e839a 10.42%, #63d1ee 100%);
+}
+.section-webinar .project-card {
+  max-width: 400px;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+.section-webinar .project-card:first-child {
+  background: linear-gradient(180deg, #39a2bb 0%, rgba(57, 162, 187, 0) 100%);
+  filter: drop-shadow(0px 0px 53px rgba(0, 0, 0, 0.2));
+  border-radius: 60px;
+}
+.section-webinar .project-card:last-child {
+  background: linear-gradient(180deg, #39a2bb 0%, rgba(57, 162, 187, 0) 100%);
+  filter: drop-shadow(0px 0px 53px rgba(0, 0, 0, 0.2));
+  border-radius: 60px;
+}
+footer {
+  background: #1f849b;
+  padding: 2rem;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  margin: 1rem 0;
+  color: white;
+}
+.socials span {
+  font-size: 2rem;
+  margin: 0.5rem;
+}

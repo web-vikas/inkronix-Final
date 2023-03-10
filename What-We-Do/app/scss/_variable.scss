@@ -1,0 +1,27 @@
+.best-services {
+  background: #070b1d;
+  padding: 2rem 0;
+  h2 {
+    font-size: 3rem;
+    color: white;
+    line-height: 3;
+  }
+  .center {
+    gap: 2rem;
+    h2 {
+      color: white;
+      font-size: 2rem;
+      @include braekpoint-down(medium) {
+       font-size: 1.5rem;
+      }
+    }
+  }
+  .card {
+    width: 409px;
+    height: 195px;
+    background: #070b1d;
+    box-shadow: inset 0px 0px 30px -3px #63d1ee;
+    border-radius: 20px;
+    margin: 0 20px;
+  }
+}

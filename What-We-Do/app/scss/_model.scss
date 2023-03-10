@@ -1,0 +1,135 @@
+.model {
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    z-index: 200;
+    color: #000;
+    gap: 10px;
+    @include braekpoint-down(small) {
+        top: 20px;
+        right: 20px;
+        font-size: 1rem;
+    }
+    svg {
+        width: 30px;
+        @include braekpoint-down(small) {
+          width: 20px;
+        }
+      }
+  }
+
+  position: absolute;
+  z-index: 23;
+  width: 100%;
+  background-color: red;
+  min-height: 100vh;
+  .left {
+    flex: 1;
+    background-color: #1e1e1e;
+    @include braekpoint-down(medium) {
+      display: none;
+    }
+  }
+  .right {
+    flex: 3;
+    background: white;
+    @include braekpoint-down(medium) {
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: space-evenly;
+    }
+    .title {
+      width: 20%;
+      @include braekpoint-down(medium) {
+        width: 100%;
+      }
+      h2 {
+        @include braekpoint-down(medium) {
+          transform: rotate(0deg);
+          width: 100%;
+          text-align: center;
+          height: 25%;
+        }
+        transform: rotate(-90deg);
+        font-weight: 700;
+        font-size: 80px;
+      }
+    }
+    .form {
+      background: #e7ebf1;
+      border-radius: 1rem;
+      padding: 45px 80px;
+      margin: 20px;
+      h3 {
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 50px;
+        @include braekpoint-down(small) {
+          font-size: 25px;
+          line-height: 30px;
+        }
+      }
+      p {
+        margin: 20px 0;
+      }
+      @include braekpoint-down(small) {
+        padding: 1.5rem 1rem;
+      }
+
+      form {
+        .inputWrapper {
+          width: 100%;
+          position: relative;
+          padding: 5px;
+          margin: 30px 0;
+          input {
+            width: 100%;
+            font-size: 1rem;
+            padding: 5px;
+            background: transparent;
+            border-bottom: 1px solid black;
+
+            &:focus ~ label,
+            &:not(:placeholder-shown) ~ label {
+              top: -10px;
+              font-size: 0.75rem;
+              color: #000;
+            }
+          }
+          label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            transition: 0.3s ease-in-out;
+            font-size: 1rem;
+            color: #1e1e1e;
+            pointer-events: none;
+          }
+        }
+      }
+      button {
+        gap: 10px;
+        @include braekpoint-down(small) {
+          width: 150px;
+          height: 40px;
+          font-size: 13px;
+        }
+        svg {
+          @include braekpoint-down(small) {
+            width: 20px;
+          }
+        }
+        width: 266.16px;
+        height: 60.99px;
+        background: #070b1d;
+        border-radius: 33.2697px;
+        color: white;
+        font-size: 20px;
+      }
+    }
+  }
+}

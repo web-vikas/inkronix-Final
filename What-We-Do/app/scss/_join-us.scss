@@ -1,0 +1,24 @@
+.join-us {
+  background-color: #070b1d;
+
+  padding: 4rem;
+  h2 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 91.136px;
+    color: white;
+    font-size: 4rem;
+    @include braekpoint-down(small) {
+      font-size: 2rem;
+    }
+    &.gradient-text {
+      font-size: 5rem;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      @include braekpoint-down(small) {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

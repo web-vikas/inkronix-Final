@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&family=Ubuntu:wght@300;400;500;700&display=swap");
+*,
+html {
+  box-sizing: border-box;
+  line-height: 1.2;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  background-color: #0d1328;
+  // font-family: "Ubuntu", sans-serif;
+}
+button,
+button:hover,
+button:active {
+  color: #fff !important;
+}
+//visiblity
+
+.hide-for-mobile {
+  @include braekpoint-down(small) {
+    display: none;
+  }
+}
+.hide-for-desktop {
+  @include breakpoint-up(small) {
+    display: none;
+  }
+}
+.hide-for-mobiles {
+  @include braekpoint-down(medium) {
+    display: none;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(266.54deg, #662979 15.2%, #2970f8 93.57%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.perpose {
+  background-color: #0d1328;
+  flex-direction: column;
+  padding: 3rem 0;
+  h3 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 2.5;
+    text-transform: uppercase;
+    color: red;
+    background: linear-gradient(267.11deg, #44b7c9 -0.84%, #2970f8 95.72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  &-desc {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 161.2%;
+    /* or 64px */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+}
+.perpose p {
+  @include braekpoint-down(small) {
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 1rem;
+  }
+  padding: 2rem;
+  text-align: center;
+  max-width: 80%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.potrait {
+  background: url("../images/portrait-young-african-american-man.png");
+  min-height: 60vh;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+  @include braekpoint-down(small) {
+    align-items: center;
+  }
+  button {
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(262.93deg, #2970f8 0%, #662979 96.88%);
+    box-shadow: 0px 0px 94px 59px rgba(41, 112, 248, 0.1);
+    border-radius: 15px;
+    gap: 10px;
+    svg {
+      width: 30px;
+    }
+  }
+}
+.hide {
+  display: none;
+}
+.animate{
+  transition: 2s ease-in-out;
+  opacity: 1 !important;
+}
